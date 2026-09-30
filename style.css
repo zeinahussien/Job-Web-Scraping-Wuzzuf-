@@ -1,0 +1,30 @@
+.main {
+    background-color: #1e1e1e !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    background-color: #1e1e1e !important;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #252526 !important;
+}
+
+
+div[data-testid="stMetric"] {
+    background-color: #2d2d2d;
+    border: 1px solid #3c3c3c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+div[data-testid="stMetric"] label {
+    color: #b0b0b0 !important;
+    font-weight: 600;
+}
+
+
+div[data-testid="stMetric"] div[data-testid="stMetricValue"] {
+    color: #b4f8c8 !important; 
+}
