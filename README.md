@@ -44,6 +44,12 @@ This project automates the extraction of job listings across four technical trac
 * **Feature Engineering:** Parses and splits composite employment types into distinct categorical dimensions (`employment_type` and `work_mode`).
 * **Output:** Saves the polished dataset as `wuzzuf_jobs_cleaned.csv`.
 
+### 3. Interactive Intelligence Dashboard (`app_dashboard.py` & `style.css`)
+- **Dark Grey & Pastel Aesthetic:** Styled using an external custom CSS sheet (`style.css`) and dark-themed Plotly charts featuring soft pastel palettes.
+- **Control Center:** Provides sidebar filters for tech tracks, work modes, and real-time keyword search.
+- **Dynamic Metrics & Visuals:** Displays active listings, hiring counts, remote shares, top hiring company bar charts, and work mode distribution pie charts.
+- **Live Feed Explorer:** Renders a clean, interactive data table providing direct access to original Wuzzuf job postings.
+  
 ---
 
 ## 📊 Dataset Schema (`wuzzuf_jobs_cleaned.csv`)
@@ -67,10 +73,13 @@ This project automates the extraction of job listings across four technical trac
    git clone [https://github.com/zeinahussien/Wuzzuf-Job-Scraper.git](https://github.com/zeinahussien/Wuzzuf-Job-Scraper.git)
 2. Ensure you have the required dependencies installed:
    ```bash
-   pip install selenium pandas
+   pip install selenium pandas 
 3. Run the scraping notebook to harvest raw data:
    ```bash
    Open and execute app.ipynb
 4. Run the cleaning notebook to process the dataset:
    ```bash
    Open and execute cleaning.ipynb
+5. Launch the interactive dashboard:
+   ```bash
+   streamlit run app_dashboard.py
